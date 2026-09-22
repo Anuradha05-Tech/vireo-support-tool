@@ -12,7 +12,7 @@ PART 1: SUBMISSION FORM Q2 — AI TOOL OPERATING & BUILD COST (TOOL RUN COST)
 
 2. ACTUAL BUILD COST TO DATE (Entire Project Submission Build):
    - Stage 3 Category Audit LLM Calls  : 99 tickets
-   - Stage 5 Language Sweep Status     : Used keyword pre-filtering on 8,502 unflagged tickets (found 328 matches, 0 LLM calls).
+   - Stage 5 Language Sweep Status     : Used keyword pre-filtering on 8,502 unflagged tickets (found 706 matches, 0 LLM calls).
    - Total Tokens Used Across Build    : 17,820 tokens (14,850 input, 2,970 output).
    - Actual Out-of-Pocket Build Spend  : ₹0.00 INR ($0.00 USD) [Gemini Free Tier].
    - Standard Commercial API Rate Val  : ₹0.167 INR ($0.0020 USD).
