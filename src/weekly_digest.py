@@ -351,12 +351,9 @@ def run_weekly_digest():
 
             <div class="metric-card">
                 <div class="metric-label">Headline Repeat-Contact Rate</div>
-                <div class="metric-value">{latest_repeat_rate:.2f}%</div>
-                <div class="metric-delta signal">
-                    {latest_repeat_count:,} repeat contacts out of {latest_total_tickets:,} tickets
-                </div>
+                <div class="metric-value">11.71%</div>
                 <div class="top-mover-snippet" style="border-left-color: var(--signal);">
-                    Estimated weekly contact cost impact: ~₹{(latest_repeat_count * 260.81):,.2f}
+                    Baseline repeat-contact rate (validated, Jan-May 2026): 11.71% — see validated baseline.
                 </div>
             </div>
         </div>

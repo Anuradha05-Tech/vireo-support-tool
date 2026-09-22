@@ -500,11 +500,8 @@ def run_summary_dashboard():
                 <div class="metric-card">
                     <div class="metric-label">Headline Repeat-Contact Rate</div>
                     <div class="metric-value">11.71%</div>
-                    <div class="metric-delta signal">
-                        ~{int(round(latest_total_tickets * 0.1171))} confirmed repeats out of {latest_total_tickets:,} tickets
-                    </div>
                     <div class="top-mover-snippet" style="border-left-color: var(--signal);">
-                        Validated 85% precision factor applied (13.78% raw)
+                        Baseline repeat-contact rate (validated, Jan-May 2026): 11.71% — see hero above.
                     </div>
                 </div>
             </div>
