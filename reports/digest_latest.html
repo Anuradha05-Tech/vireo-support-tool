@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Support Digest - Vireo Audio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --paper: #F6F5F1;
+            --ink: #1B1D1F;
+            --rule: #C9C6BE;
+            --signal: #2F6F62;
+            --spike: #B5482F;
+            --muted: #6B6862;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--paper);
+            color: var(--ink);
+            font-family: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            border-bottom: 1px solid var(--rule);
+            padding-bottom: 16px;
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            font-size: 28px;
+            line-height: 1.15;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 4px;
+        }
+
+        .meta-date {
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        /* Key Metrics Grid */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .metric-card {
+            border: 1px solid var(--rule);
+            background: #FFFFFF;
+            padding: 16px;
+        }
+
+        .metric-card.callout {
+            border-left: 4px solid var(--signal);
+        }
+
+        .metric-label {
+            font-size: 12px;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            margin-bottom: 6px;
+        }
+
+        .metric-value {
+            font-size: 24px;
+            font-weight: 700;
+            font-variant-numeric: tabular-nums;
+            margin-bottom: 4px;
+        }
+
+        .metric-delta {
+            font-size: 12px;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .metric-delta.spike {
+            color: var(--spike);
+            font-weight: 600;
+        }
+
+        .metric-delta.signal {
+            color: var(--signal);
+            font-weight: 600;
+        }
+
+        .top-mover-snippet {
+            margin-top: 10px;
+            font-size: 13px;
+            color: var(--ink);
+            background: var(--paper);
+            padding: 8px 12px;
+            border-left: 2px solid var(--rule);
+            font-style: italic;
+        }
+
+        /* Section Header */
+        .section-header {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-variant-numeric: tabular-nums;
+            margin-bottom: 32px;
+        }
+
+        th {
+            text-align: left;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--muted);
+            border-bottom: 1px solid var(--rule);
+            padding: 8px 4px;
+            text-transform: uppercase;
+        }
+
+        th.num, td.num {
+            text-align: right;
+        }
+
+        td {
+            padding: 10px 4px;
+            border-bottom: 1px solid var(--rule);
+            font-size: 14px;
+        }
+
+        .spike-text {
+            color: var(--spike);
+            font-weight: 600;
+        }
+
+        .signal-text {
+            color: var(--signal);
+            font-weight: 600;
+        }
+
+        /* Representative Examples List */
+        .examples-section {
+            margin-top: 32px;
+            border-top: 1px solid var(--rule);
+            padding-top: 24px;
+        }
+
+        .cat-example-block {
+            margin-bottom: 20px;
+        }
+
+        .cat-example-title {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .example-list {
+            list-style: none;
+        }
+
+        .example-item {
+            font-size: 13px;
+            color: var(--muted);
+            padding: 6px 0 6px 12px;
+            border-left: 2px solid var(--rule);
+            margin-bottom: 6px;
+            background: #FFFFFF;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 16px;
+            border-top: 1px solid var(--rule);
+            font-size: 12px;
+            color: var(--muted);
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weekly Support Digest</h1>
+            <div class="meta-date">Week of Jun 22, 2026 – Jun 28, 2026 &bull; Vireo Audio Support Intelligence</div>
+        </header>
+
+        <div class="metrics-grid">
+            <div class="metric-card callout">
+                <div class="metric-label">Top Mover This Week</div>
+                <div class="metric-value">Charging & Battery</div>
+                <div class="metric-delta spike">
+                    ▲ +14 tickets (+100.0% vs prior week)
+                </div>
+                <div class="top-mover-snippet">
+                    "dear sir/madam, i bought pulse 2 on 02/02. right earbud completely silent. i reset the buds. waiting for your ..."
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-label">Headline Repeat-Contact Rate</div>
+                <div class="metric-value">13.78%</div>
+                <div class="metric-delta signal">
+                    27 repeat contacts out of 199 tickets
+                </div>
+                <div class="top-mover-snippet" style="border-left-color: var(--signal);">
+                    Estimated weekly contact cost impact: ~₹7,041.87
+                </div>
+            </div>
+        </div>
+
+        <div class="section-header">
+            <span>All Categories (Ranked by Volume)</span>
+            <span style="font-size: 12px; color: var(--muted); font-weight: normal;">Total: 199 tickets</span>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th class="num">Count</th>
+                    <th class="num">% Share</th>
+                    <th class="num">Δ vs Prior Week</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Delivery & Shipping</strong></td>
+                    <td class="num">34</td>
+                    <td class="num">17.1%</td>
+                    <td class="num ">+3 (+9.7%)</td>
+                </tr>
+                <tr>
+                    <td><strong>Charging & Battery</strong></td>
+                    <td class="num">28</td>
+                    <td class="num">14.1%</td>
+                    <td class="num spike-text">▲ +14 (+100.0%)</td>
+                </tr>
+                <tr>
+                    <td><strong>Other</strong></td>
+                    <td class="num">28</td>
+                    <td class="num">14.1%</td>
+                    <td class="num ">+3 (+12.0%)</td>
+                </tr>
+                <tr>
+                    <td><strong>Returns & Refunds</strong></td>
+                    <td class="num">23</td>
+                    <td class="num">11.6%</td>
+                    <td class="num spike-text">▲ +11 (+91.7%)</td>
+                </tr>
+                <tr>
+                    <td><strong>Connectivity</strong></td>
+                    <td class="num">20</td>
+                    <td class="num">10.1%</td>
+                    <td class="num ">-2 (-9.1%)</td>
+                </tr>
+                <tr>
+                    <td><strong>Billing & Payments</strong></td>
+                    <td class="num">20</td>
+                    <td class="num">10.1%</td>
+                    <td class="num ">-1 (-4.8%)</td>
+                </tr>
+                <tr>
+                    <td><strong>Audio Quality</strong></td>
+                    <td class="num">14</td>
+                    <td class="num">7.0%</td>
+                    <td class="num ">+6 (+75.0%)</td>
+                </tr>
+                <tr>
+                    <td><strong>App & Firmware</strong></td>
+                    <td class="num">11</td>
+                    <td class="num">5.5%</td>
+                    <td class="num ">0 (0.0%)</td>
+                </tr>
+                <tr>
+                    <td><strong>Product Enquiry</strong></td>
+                    <td class="num">10</td>
+                    <td class="num">5.0%</td>
+                    <td class="num ">+1 (+11.1%)</td>
+                </tr>
+                <tr>
+                    <td><strong>Account & Login</strong></td>
+                    <td class="num">6</td>
+                    <td class="num">3.0%</td>
+                    <td class="num ">-3 (-33.3%)</td>
+                </tr>
+                <tr>
+                    <td><strong>Warranty & Repair</strong></td>
+                    <td class="num">5</td>
+                    <td class="num">2.5%</td>
+                    <td class="num ">0 (0.0%)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="examples-section">
+            <div class="section-header">Representative Voice of Customer Examples (Top 5 Categories)</div>
+            <div class="cat-example-block">
+                <div class="cat-example-title">Delivery & Shipping</div>
+                <ul class="example-list">
+                    <li class="example-item">"Product: Nexa watch Order: VR896298 Purchased: 24-06-2026 Issue: order not delivered, tracking not updating Tried: calle..."</li>
+                    <li class="example-item">"[IVR transcript] hello package not delivered even after 17 days anyone there..."</li>
+                    <li class="example-item">"pickup scheduled but no one shwed up - please resolve asap..."</li>
+                </ul>
+            </div>
+            <div class="cat-example-block">
+                <div class="cat-example-title">Charging & Battery</div>
+                <ul class="example-list">
+                    <li class="example-item">"dear sir/madam, i bought pulse 2 on 02/02. right earbud completely silent. i reset the buds. waiting for your reply...."</li>
+                    <li class="example-item">"Hello, Got the Pulse 2 earbuds frm vireo.in 3 weeks back. The promised 30 hours is nowhere close, I get maybe 2. Neeed t..."</li>
+                    <li class="example-item">"Product: my Strata 2 headphones Order: VR906256 Purchased: 20 Apr Issue: battery backup is terrible now Tried: fully cha..."</li>
+                </ul>
+            </div>
+            <div class="cat-example-block">
+                <div class="cat-example-title">Other</div>
+                <ul class="example-list">
+                    <li class="example-item">"[IVR transcript] helo order not delivered, tracking not updating pulse 2 buds pls reply..."</li>
+                    <li class="example-item">"bhai third tme now. teh band snapped while i was putting it on this mornng please help karo..."</li>
+                    <li class="example-item">"want to cancel my order..."</li>
+                </ul>
+            </div>
+            <div class="cat-example-block">
+                <div class="cat-example-title">Returns & Refunds</div>
+                <ul class="example-list">
+                    <li class="example-item">"Same issue as before, it came back after 2 weeks. return pickup has not happened please call me on my registered number..."</li>
+                    <li class="example-item">"hi there, my strata 3 headphones purchased 10 days ago, order vr883270. still waiting for my refund. i want my money bac..."</li>
+                    <li class="example-item">"I have been sittig at home for 3 days waiting for your courier - VR887158..."</li>
+                </ul>
+            </div>
+            <div class="cat-example-block">
+                <div class="cat-example-title">Connectivity</div>
+                <ul class="example-list">
+                    <li class="example-item">"Honestly regretting this purchase. I bought AirLite on 17 Apr. connection drops constantly. I already turned off wifi. T..."</li>
+                    <li class="example-item">"Hi Vireo support, Got the Orbit smart speaker from vireo.in last month.  The pairing light blinks but nothing ever shows..."</li>
+                    <li class="example-item">"To the Vireo Customer Care Team,  I am writing with reference to my order of AirLite (VR905729) placed on March 22. The ..."</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <span>Vireo Audio Support Intelligence System &bull; Confidential Internal Report</span>
+            <span>Generated from cded5ec7-cd54-40e6-ba66-7b3e581319c7-tickets.csv</span>
+        </footer>
+    </div>
+</body>
+</html>

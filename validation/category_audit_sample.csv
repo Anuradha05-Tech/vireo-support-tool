@@ -1,0 +1,255 @@
+ticket_id,source_system,assigned_category,verdict,llm_reason,customer_message
+TK-240375,legacy_fd,Account & Login,agree,Categorization is accurate.,"Arc neckband purchased 10 days ago, order VR903434.  Cannot login to my account.
+I tried 5 times. Nothing changed.
+How do I get this fixed?
+Thanks, Sameer Ghosh"
+TK-247289,helpdesk,Account & Login,agree,Categorization is accurate.,"team,
+not receiving otp to login
+pls reply"
+TK-246453,helpdesk,Account & Login,agree,Categorization is accurate.,"Product: Strata 2
+Purchased: Juuly 05
+Issue: locked out of my own account since around Diwali
+Tried: tried on another browser
+Expected: refund"
+TK-242533,legacy_fd,Account & Login,agree,Categorization is accurate.,OTP not coming on my number.  VR897930. what do i do now?
+TK-244263,legacy_fd,Account & Login,agree,Categorization is accurate.,"Bought Nexa Fit around June 28 from Amazon. Locked out of my own account since last month.
+I tried on another browser.
+Can someone fix this?
+Rgds,"
+TK-244618,legacy_fd,Account & Login,agree,Categorization is accurate.,"hi there, order vr893548 (the strata 3).  locked out of my own account since around diwali. can someone fix this? thanks & regards,"
+TK-243819,helpdesk,Account & Login,agree,Categorization is accurate.,"sir ji
+cannot logn to my account"
+TK-252239,helpdesk,Account & Login,agree,Categorization is accurate.,"DEAR TEAM, BOUGHT ORBIT MINI AROUND 24/03 FROM VIREO.IN. Your site keeps saying it sent me a code and my phone disagrees. I tried on another browser. Please resolve asap"
+TK-254424,helpdesk,Account & Login,agree,Categorization is accurate.,"HELLO
+CANNOT LOGIN TO MY ACCOUNT
+TEH PULSE 2 EARBUDS
+ANYONE THERE"
+TK-252466,helpdesk,App & Firmware,agree,Categorization is accurate.,after the update proompt it went dark and never came back - VR907309 - waiting for your reply
+TK-250742,helpdesk,App & Firmware,agree,Categorization is accurate.,the pairing light blinks but nothing ever shows up on my oneplus
+TK-242109,legacy_fd,App & Firmware,agree,Categorization is accurate.,"HI, BOUGHT THE STRATA 3 AROUND 16 MAR FROM AMAZON. App not opening after update. Waiting for your reply. Rgds Komal"
+TK-243551,helpdesk,App & Firmware,agree,Categorization is accurate.,"hi
+it's showing a spinning circle for hours
+my pulse
+anyone there"
+TK-246924,helpdesk,App & Firmware,agree,Categorization is accurate.,"Dear Sir/Madam,
+
+I am writing with reference to my order of my Pulse (VR890142) placed on July 29.  App crashes when I open device settings. I have reinstalled the app. I request you to look into this matter at the earliest.
+
+Sincerely,
+Ishaan Mathew"
+TK-254097,helpdesk,App & Firmware,agree,Categorization is accurate.,"hi sir
+app crashes when i open device settings
+bahut pareshan hu"
+TK-250281,helpdesk,App & Firmware,agree,Categorization is accurate.,"Hi, I bought my Nexa on 26-01-2026. Update failed and now it won't turn on. I restarted the app. Nothing changed. Kindly look into it. RGDS, KUNAL"
+TK-244772,helpdesk,App & Firmware,agree,Categorization is accurate.,I have been a loyal customer and thsi is how you treat me. Got Arc neckband from Flipkart recently. since the last update the app just shows a white screen. I already reinstalled the app. Fix this or I am posting on twitter.
+TK-249905,helpdesk,App & Firmware,agree,Categorization is accurate.,"the progress bar has not moved since morning
+VR898568"
+TK-251198,helpdesk,Audio Quality,agree,Categorization is accurate.,"hi sir
+microphone is very low on the the pulse 2 earbuds
+please help karo
+hello??"
+TK-243056,legacy_fd,Audio Quality,agree,Categorization is accurate.,"to the vireo customer care team,
+
+i am writing witth reference to my order of my pusle (vr894418) placed on 07/06. static noise when playing music. i have tried wireed mode. i request you to kindly arrrange a replacement.
+
+regards,
+rohit saxena"
+TK-241286,legacy_fd,Audio Quality,agree,Categorization is accurate.,"BUZZING SOUND FROM THE SPEAKER, VR908448, NEED THIS SORTED THIS WEEK"
+TK-242972,legacy_fd,Audio Quality,agree,Categorization is accurate.,Pathetic experience honestly.  Ordered my Straat 3 hedaphones in June. microphone is very low on the my Strata 3 headphones. I already checked mic permissions. Fix this or I am posting on twitter.
+TK-245374,helpdesk,Audio Quality,agree,Categorization is accurate.,"Hello, Ordered Pulse2 around Diwali. Left side has no audio at all. I tried different phone. Nothing changed. How do I get this fixed? Thanks in adavnce Krishna Singh"
+TK-246833,helpdesk,Audio Quality,agree,Categorization is accurate.,"microphone is very low on the my strata 2 headphones
+need this sorted this week"
+TK-254651,helpdesk,Audio Quality,agree,Categorization is accurate.,"hello
+there is a frying sound in the background of every song
+the strata 3
+kindly do the needful"
+TK-241611,legacy_fd,Audio Quality,agree,Categorization is accurate.,"To the Vireo Customer Care Team,
+
+I am writing with reference to my order of my Pulse (VR897301) placed on 01-03-2025. Everything sounds like it is coming from one direction now. I have reset the buds. I request you to process a refund to my original payment method.
+
+Regards,
+Steen Gaikwad
+Lucknow"
+TK-250079,helpdesk,Audio Quality,agree,Categorization is accurate.,"hi
+one of them is just decoration at this point
+pulse 2 buds"
+TK-244442,legacy_fd,Billing & Payments,agree,Categorization is accurate.,"hi
+two entries of rs 2499 on my statement for one pair of earbuds
+pulse 2
+??"
+TK-250984,helpdesk,Billing & Payments,agree,Categorization is accurate.,"I have been a loyal cutsomer and this is how you treat me. Ordered USB-C cable last week. my bank syas Rs 1799 went to you but your site says I have no orders. I already tried logging out and in. I want a replacement or refund, nothing else."
+TK-240787,legacy_fd,Billing & Payments,agree,Categorization is accurate.,"Really frustrating. Bought my Nexa Fit band around 17/02 from Flipkart. UPI shows success, your app shows nothing. I already tried logging out & in. This is the last time I buy from you."
+TK-240951,helpdesk,Billing & Payments,agree,Categorization is accurate.,I have been a loyal customer and this is how you treat me. Order VR887399 (Orbit Mini). card charged two times. I already checked with bank. Fix this or I am posting on twitter.
+TK-242472,legacy_fd,Billing & Payments,agree,Categorization is accurate.,"helo
+discount was not applied at checkout
+teh neckband"
+TK-245183,helpdesk,Billing & Payments,agree,Categorization is accurate.,Really frustrating. Bought the AirLLite budds around March 26 from Amazon. the page failed after I paid and now nothing shows in my account. I already tried loggign out and in. Escalate this to someone senior.
+TK-252790,helpdesk,Billing & Payments,agree,Categorization is accurate.,"piad once, statement disagrees"
+TK-241686,legacy_fd,Billing & Payments,agree,Categorization is accurate.,"Dear Sir/Madam,
+
+I am writing with reference to my order of orbit mini (VR890004) placed on 23/04. The invoice PDF link gives a 404. I have checked orders page. I REQUEST YOU TO PROCESS A REFUND TO MY ORIGINAL PAYMENT METHOD.
+
+SINCERELY,
+ROHT RAO
+CHENNAI"
+TK-251238,helpdesk,Billing & Payments,agree,Categorization is accurate.,"Hello, This is regarding my Arc. My son ordered this without asking, please reverse. How do I get this fixed? Thanks, Joseph"
+TK-248297,helpdesk,Charging & Battery,agree,Categorization is accurate.,"namaste,
+ordered my strata 3 headphones 10 days ago. battery draining even when not in use.
+i turned off always-on display. nothing changed.
+waiting for your reply."
+TK-251222,helpdesk,Charging & Battery,agree,Categorization is accurate.,This is regarding my Pulse 2. Dies by lunchtime with light use. I turned off always-on display. Nothing changed. Please resolve asap.
+TK-252391,helpdesk,Charging & Battery,disagree,Message describes issue related to App & Firmware instead of Charging & Battery.,"Product: my Nexa Fit band
+Order: VR889210
+Purchased: 28-10-2025
+Issue: goes form full to empty during one commute
+Tried: updated the app
+Expected: refund"
+TK-250085,helpdesk,Charging & Battery,agree,Categorization is accurate.,"product: the pulse 2 earbuds
+order: vr895270
+purchased: 07-11-2025
+issue: the left one is dead every morning even though it was in the case all nihgt
+tried: cleaned the contacts w/ a cloth
+expected: replacement"
+TK-246648,helpdesk,Charging & Battery,agree,Categorization is accurate.,honestly regretting this purchase. ordered the airlite buds 10 days ago. case wont charge since 10 days ago. i already charged for 6 hours nothing. this is the last time i buy from you
+TK-250378,helpdesk,Charging & Battery,agree,Categorization is accurate.,"Product: the strata 3
+Purchased: 04-12-2025
+Issue: bttery life has dropped to almost ntohing
+Tried: fully charged and discharged twice
+Expected: refund"
+TK-249666,helpdesk,Charging & Battery,agree,Categorization is accurate.,"hi
+this is the second time i am writing about this.
+case does not charge, no light at all"
+TK-248180,helpdesk,Charging & Battery,agree,Categorization is accurate.,no sound from the right earbud
+TK-251568,helpdesk,Charging & Battery,agree,Categorization is accurate.,"Hi team, I bought airlite earbuds on 10/03. Battery backup is terrible now. I UPDATED THE APP. Please help. Thank you,"
+TK-254595,helpdesk,Connectivity,agree,Categorization is accurate.,"Dear Sir/Madam,
+
+I am writing wth reference to my order of my Strata 3 headphones (VR909034) placed on 02 Feb. It connects for a second and theen vanishes from the device list. I have tried on another phone. I request you to look into this matter at the earliest.
+
+Yours faithfully,
+Gurpeet Bansal"
+TK-250677,helpdesk,Connectivity,agree,Categorization is accurate.,not waht i expected from vireo.  bought the neckabnd around november 24 from vireo.in. bluetooth keeps cutting out. i alrady kept phone in hand. refund. now.
+TK-241289,legacy_fd,Connectivity,agree,Categorization is accurate.,Really frustrating. Bought my Pulse aronud 21/09 from vireo.in. bluetooth keeps cutting out. I already kept phone in hand. Refund. Now.
+TK-244962,helpdesk,Connectivity,agree,Categorization is accurate.,"pairing is not working, vr891269"
+TK-240752,legacy_fd,Connectivity,agree,Categorization is accurate.,IT CONNECTS FOR A SECOND AND THEEN VANISHES FROM THE DEVICE LIST
+TK-253822,helpdesk,Connectivity,agree,Categorization is accurate.,Not what I expected from Vireo. Still not fixed after your last 'resolution'. Got my Strata 3 headphones from Amazon recently. pairing is not working. I already forgot teh device and tried again. Fix this or I am posting on twitter
+TK-243730,legacy_fd,Connectivity,agree,Categorization is accurate.,"Daer team, Order VR904178 (the neckband). Pairing is not working. I restarted the phone. Nothnig changed. I want my money back. Please revert, Sheya Ghosh"
+TK-251882,helpdesk,Connectivity,agree,Categorization is accurate.,"hi there,
+ordered arc neckband a month ago.  audio keeps disconnecting every few minutes.
+i kept phone in hand. nothing changed.
+i want my money back."
+TK-244610,legacy_fd,Connectivity,agree,Categorization is accurate.,"To the Vireo Customer Care Team,
+
+I am writing with reference to my order of Orbit speaker (VR882713) placed on 03 Feb. The app finds the speaker and then gives up at the network step. I have tried 2.4GHz. I request you to process a refund to my original payment method.
+
+Sincerely,
+Lobsang Jadhav
+Hyderabad"
+TK-250019,helpdesk,Delivery & Shipping,agree,Categorization is accurate.,Pathetic experience honestly. Got spare case from Amazon around Diwali. product arrived damaged. I already refused nothing as I didn't notice till later. Escalate this to someone senior.
+TK-244305,legacy_fd,Delivery & Shipping,agree,Categorization is accurate.,my order has not been delivered yet - need this sorted this week
+TK-247166,helpdesk,Delivery & Shipping,agree,Categorization is accurate.,"helo
+screen has a crack before i even switched it on
+nexa 2
+help"
+TK-246720,helpdesk,Delivery & Shipping,agree,Categorization is accurate.,"Dear team, Order VR899406 (Pulse2). Order status stuck on sihpped since 03/11. I called the courier. Waiting for your reply. Thanks in advance, Joseph Naidu"
+TK-240351,legacy_fd,Delivery & Shipping,agree,Categorization is accurate.,"dear team,
+nexa 2 purchased 10 days ago, order vr904596.  order status stuck on shipped since 24 jan.
+how do i get this fixed?"
+TK-244709,legacy_fd,Delivery & Shipping,agree,Categorization is accurate.,[IVR transcript] I haven't received my order. VR902205
+TK-246171,helpdesk,Delivery & Shipping,agree,Categorization is accurate.,"Your aent said it was fixed. It is not.
+Product: your charger
+Purchased: 05/10
+Issue: got a different colour thna ordered
+Tried: rechecked my ordeer
+Expected: reeplacement"
+TK-254884,helpdesk,Delivery & Shipping,agree,Categorization is accurate.,"Namaste, I bought Pulse earbuds on 19/06.  Product arrived damaged. I refused nothing as I didn't notice till later. Nothing changed. Waiting for your reply. Thanks in advance,"
+TK-240627,legacy_fd,Delivery & Shipping,agree,Categorization is accurate.,"[IVR transcript] Pathetic experience honestly. This is regarding Pulse earbuds. box was crushed and the Pulse earbuds is cracked. I already refused nothing as I didn't notice till later. I want a replacement or refund, nothing else."
+TK-253813,helpdesk,Other,disagree,Message clearly concerns 'Delivery & Shipping' issues rather than 'Other'.,"namaste, i bought pulse2 on may 25. need to change delivery address. i tried editing in app. not what i expected from vireo. waiting for ur reply."
+TK-250451,helpdesk,Other,disagree,Message clearly concerns 'Delivery & Shipping' issues rather than 'Other'.,"hi, i bought the nexa 2 on 13-02-2026. package not delivered even after 13 days. i checked the tracking page daily. nothing changed. please cal me on my registered number. thanks in advance, neha"
+TK-247228,helpdesk,Other,disagree,Message clearly concerns 'Charging & Battery' issues rather than 'Other'.,"Hi, Bought the Pulse 2 earbuds around Septmber 20 from vireo.in. Left side not charging in the case. What do I do now?"
+TK-248405,helpdesk,Other,disagree,Message clearly concerns 'Delivery & Shipping' issues rather than 'Other'.,"hello ji
+need to change delivery adress
+abhi tak kuch nahi hua"
+TK-254282,helpdesk,Other,disagree,Message clearly concerns 'Delivery & Shipping' issues rather than 'Other'.,Very poor quality. I bought my Nexa 2 watch on June 07. tracking has said out for delivery for a week now. I already checked the tracking page daily. Escalate this to someone senior
+TK-254781,helpdesk,Other,agree,Categorization as 'Other' is appropriate for general/miscellaneous query.,want to cancel my order
+TK-250626,helpdesk,Other,agree,Categorization as 'Other' is appropriate for general/miscellaneous query.,a hiss that wasn't there when I bought it
+TK-245025,helpdesk,Other,disagree,Message clearly concerns 'Connectivity' issues rather than 'Other'.,Pathetic experience honestly.  Order VR891323 (orbit mini). pairing is not working. I ALREADY TRIED ON ANOTHER PHONE. Fix this or I am posting on twitter.
+TK-243971,helpdesk,Other,agree,Categorization as 'Other' is appropriate for general/miscellaneous query.,"pathetic expreience honestly. bought strata 3 around 07-08-2025 from amazon. please cancel, ordered by mistake. i already tried cancle button, greyed out. escalate this to someone senior."
+TK-250098,helpdesk,Product Enquiry,agree,Categorization is accurate.,"hi
+is replacement case compatible with my tv
+replacement case
+kindly do the needful"
+TK-251021,helpdesk,Product Enquiry,agree,Categorization is accurate.,"really frustrating. got my pulse 2 from vireo.in 2 weeks ago. my dad has an old nokia, will the watch app run. this is the last time i buy from you."
+TK-244208,legacy_fd,Product Enquiry,agree,Categorization is accurate.,coupon code not working
+TK-244148,helpdesk,Product Enquiry,agree,Categorization is accurate.,pathetic experience honestly. i bought the pulse 2 earbuds on 13/08. does the pulse 2 earbuds work w/ iphone. this is the last time i buy from you.
+TK-250900,helpdesk,Product Enquiry,agree,Categorization is accurate.,"ordered spare case a month ago.  before i buy - will this talk to a 2019 samsung.
+please advise."
+TK-251795,helpdesk,Product Enquiry,agree,Categorization is accurate.,"Hello, Ordered my Pulse 2 last month. Is my Pulse 2 compatible w/ my TV. Please resolve asap. Thanks & regards, Harpreet Naidu"
+TK-243442,legacy_fd,Product Enquiry,agree,Categorization is accurate.,"PRODUCT: PULSE EARBUDS
+ORDER: VR903933
+PURCHASED: 31 JUL
+ISSUE: BEFORE I BUY - WILL THIS TALK TO A 2019 SAMSUNG
+EXPECTED: CALLBACK"
+TK-241648,legacy_fd,Product Enquiry,agree,Categorization is accurate.,"Product: AirLtie
+Order: VR895896
+Purchased: 04 Apr
+Issue: does AirLite work w/ iPhone
+Expected: resolution"
+TK-252050,helpdesk,Product Enquiry,agree,Categorization is accurate.,"Hello, Bought Nexa 2 around April 11 from vireo.in. Before I buy - will this talk to a 2019 Samsung. Not what I expected from Vireo. Please advise."
+TK-254176,helpdesk,Returns & Refunds,agree,Categorization is accurate.,refund not received yet
+TK-249576,helpdesk,Returns & Refunds,agree,Categorization is accurate.,"product arrived damaged
+can someone fix this?"
+TK-245724,helpdesk,Returns & Refunds,agree,Categorization is accurate.,"honestly regretting this purchase. my nexa fit band purchased in october, order vr880811. refund not received yet. i already emailed twice. i want a replacement or refund, nothing else"
+TK-243701,helpdesk,Returns & Refunds,agree,Categorization is accurate.,"Dear Sir/Madam,
+
+Same issue, third ticket. I am writing with reefrence to my order of teh Orbit smart speaker (VR889194) plced on 05/06. Still waiting for my refund. I have chceked bank. I request you to process a refund to my original payment method.
+
+Regards,
+Aarav Tiawri"
+TK-244284,legacy_fd,Returns & Refunds,agree,Categorization is accurate.,"helo
+return pickup has not happened
+help"
+TK-249405,helpdesk,Returns & Refunds,agree,Categorization is accurate.,"Hi, Got my Pulse 2 frrom vireo.in 10 days ago. Refund not received yet. I checked bank. Need this sorted this week."
+TK-240310,legacy_fd,Returns & Refunds,agree,Categorization is accurate.,"Really frustrating.  This is regarding pulse 1. refund not received yet. I already emailed twice. I want a replacement or refund, nothing else."
+TK-249573,helpdesk,Returns & Refunds,agree,Categorization is accurate.,you picked up the item 11 days ago and my money hasn't come back - VR881554 - pls call me on my registered number
+TK-240498,legacy_fd,Returns & Refunds,agree,Categorization is accurate.,"Hi,
+Ordered Orbit speaker last month. Where is the money for the return.
+I emailed twice.
+What do I do now?"
+TK-245338,helpdesk,Warranty & Repair,disagree,Message describes issue related to Charging & Battery instead of Warranty & Repair.,"[IVR transcript] I bought Pulse2 on 13/09. The charging case is not charging. Please resolve asap. Please revert, Pooja Arora"
+TK-245512,helpdesk,Warranty & Repair,agree,Categorization is accurate.,"Hi there,
+Got my Pulse 2 from vireo.in 10 days ago. Warranty claim pending for 4 days.
+Please help.
+Thanks in advance Nisha Jadhav"
+TK-250606,helpdesk,Warranty & Repair,agree,Categorization is accurate.,"to the vireo customer care team,
+
+i am writing with reference to my order of pulse 2 buds (vr902860) placed on 18-01-2026. i hear music in one ear only, other is mute. i have checked balance settings. i request you to provide a resolution within 3 working days.
+
+sincerely,
+manpreet verma"
+TK-244370,legacy_fd,Warranty & Repair,agree,Categorization is accurate.,"Hey,
+Third time now.  Order VR894462 (my Strata 3 headphones). I sent the unit in 4 days ago and have hard nothing.
+I called service centre. Notihng changed.
+I am losing patience.
+Please resolve asap."
+TK-249569,helpdesk,Warranty & Repair,agree,Categorization is accurate.,"Namaste, Got my Nexa from vireo.in around Diwali. What is the status of my warranty claim. I want a replacement. Rgds,"
+TK-247479,helpdesk,Warranty & Repair,agree,Categorization is accurate.,"Deear Sir/Madam,
+
+I am writing with rfeerence to my order of the Nexa 2 placed on 06/11. Warranty claim peding for 6 days. I have emailed twice. I request you to look into this matter at the earliest.
+
+Yours faithfully,
+Shreya Mathew
+Noida"
+TK-254301,helpdesk,Warranty & Repair,disagree,Message describes issue related to App & Firmware instead of Warranty & Repair.,"Product: the fit band
+Order: VR893251
+Purchased: 18 Apr
+Issue: the display jut ignores my finger half the time
+Tried: updated firmware
+Expected: fix"
+TK-250458,helpdesk,Warranty & Repair,agree,Categorization is accurate.,"I am losing patience. Ordered pulse 2 buds around Diwali. claim number RMA43967, anyone alive there?. I already called service centre. Fix this or I am posting on twitter."
+TK-253722,helpdesk,Warranty & Repair,agree,Categorization is accurate.,"Dear Sir/Madam,
+
+I am writing with reference to my order of my Nexa 2 watch placed on 15 Jan. The display just ignores my finger half the time. I have restarted. I request you to kindly arrange a replacement.
+
+Sincerely,
+Nikhil Singh
+Nashik"

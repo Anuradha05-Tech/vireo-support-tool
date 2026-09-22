@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Leaderboard - Vireo Audio Support</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --paper: #F6F5F1;
+            --ink: #1B1D1F;
+            --rule: #C9C6BE;
+            --signal: #2F6F62;
+            --spike: #B5482F;
+            --muted: #6B6862;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--paper);
+            color: var(--ink);
+            font-family: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            border-bottom: 1px solid var(--rule);
+            padding-bottom: 16px;
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            font-size: 28px;
+            line-height: 1.15;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 4px;
+        }
+
+        .meta-date {
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 28px 0 12px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-variant-numeric: tabular-nums;
+            margin-bottom: 24px;
+        }
+
+        th {
+            text-align: left;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--muted);
+            border-bottom: 1px solid var(--rule);
+            padding: 8px 4px;
+            text-transform: uppercase;
+        }
+
+        th.num, td.num {
+            text-align: right;
+        }
+
+        td {
+            padding: 10px 4px;
+            border-bottom: 1px solid var(--rule);
+            font-size: 14px;
+        }
+
+        .rank-col {
+            width: 48px;
+            font-weight: 600;
+            color: var(--muted);
+        }
+
+        .agent-name {
+            font-weight: 600;
+        }
+
+        .sub-text {
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        .delta-pos {
+            color: var(--signal);
+            font-weight: 600;
+        }
+
+        .delta-neg {
+            color: var(--spike);
+        }
+
+        /* Tier 2 Card Container */
+        .tier2-block {
+            background: #FFFFFF;
+            border: 1px solid var(--rule);
+            padding: 16px;
+            margin-top: 32px;
+        }
+
+        .tier2-header {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .tier2-sub {
+            font-size: 12px;
+            color: var(--muted);
+            margin-bottom: 12px;
+        }
+
+        footer {
+            margin-top: 36px;
+            padding-top: 16px;
+            border-top: 1px solid var(--rule);
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        .caveat-box {
+            background: #FFFFFF;
+            border-left: 3px solid var(--rule);
+            padding: 10px 14px;
+            font-size: 12px;
+            color: var(--muted);
+            margin-top: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tier 1 Agent Leaderboard</h1>
+            <div class="meta-date">Week of Jun 22, 2026 – Jun 28, 2026 &bull; Qualified Tickets Closed (Resolved & Closed)</div>
+        </header>
+
+        <div class="section-title">
+            <span>Frontline Tier 1 Performance Ranking</span>
+            <span style="font-size: 12px; color: var(--muted); font-weight: normal;">38 Tier 1 Agents</span>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="rank-col">Rank</th>
+                    <th>Agent Name</th>
+                    <th>Team / Site</th>
+                    <th class="num">Closed This Week</th>
+                    <th class="num">Prior Week</th>
+                    <th class="num">Δ vs Prior</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="rank-col">#1</td>
+                    <td class="agent-name">Vivaan Sethi</td>
+                    <td>Returns Desk <span class="sub-text">(Bengaluru)</span></td>
+                    <td class="num"><strong>11</strong></td>
+                    <td class="num">7</td>
+                    <td class="num delta-pos">+4</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#2</td>
+                    <td class="agent-name">Pooja Dhillon</td>
+                    <td>Email Frontline <span class="sub-text">(Bengaluru)</span></td>
+                    <td class="num"><strong>11</strong></td>
+                    <td class="num">5</td>
+                    <td class="num delta-pos">+6</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#3</td>
+                    <td class="agent-name">Diya Singh</td>
+                    <td>Billing <span class="sub-text">(Bengaluru)</span></td>
+                    <td class="num"><strong>10</strong></td>
+                    <td class="num">9</td>
+                    <td class="num delta-pos">+1</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#4</td>
+                    <td class="agent-name">Aishwarya Agarwal</td>
+                    <td>Logistics <span class="sub-text">(Indore)</span></td>
+                    <td class="num"><strong>10</strong></td>
+                    <td class="num">7</td>
+                    <td class="num delta-pos">+3</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#5</td>
+                    <td class="agent-name">Tarun Pereira</td>
+                    <td>Logistics <span class="sub-text">(Bengaluru)</span></td>
+                    <td class="num"><strong>9</strong></td>
+                    <td class="num">4</td>
+                    <td class="num delta-pos">+5</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#6</td>
+                    <td class="agent-name">Om Varghese</td>
+                    <td>Chat Frontline <span class="sub-text">(Indore)</span></td>
+                    <td class="num"><strong>9</strong></td>
+                    <td class="num">1</td>
+                    <td class="num delta-pos">+8</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#7</td>
+                    <td class="agent-name">Geeta Rathore</td>
+                    <td>Logistics <span class="sub-text">(Indore)</span></td>
+                    <td class="num"><strong>8</strong></td>
+                    <td class="num">7</td>
+                    <td class="num delta-pos">+1</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#8</td>
+                    <td class="agent-name">Ayaan Pawar</td>
+                    <td>Email Frontline <span class="sub-text">(Indore)</span></td>
+                    <td class="num"><strong>8</strong></td>
+                    <td class="num">5</td>
+                    <td class="num delta-pos">+3</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#9</td>
+                    <td class="agent-name">Kavya D'Souza</td>
+                    <td>Email Frontline <span class="sub-text">(Bengaluru)</span></td>
+                    <td class="num"><strong>8</strong></td>
+                    <td class="num">5</td>
+                    <td class="num delta-pos">+3</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#10</td>
+                    <td class="agent-name">Rajat Saxena</td>
+                    <td>Logistics <span class="sub-text">(Indore)</span></td>
+                    <td class="num"><strong>7</strong></td>
+                    <td class="num">10</td>
+                    <td class="num delta-neg">-3</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#11</td>
+                    <td class="agent-name">Saanvi Saxena</td>
+                    <td>Returns Desk <span class="sub-text">(Bengaluru)</span></td>
+                    <td class="num"><strong>7</strong></td>
+                    <td class="num">2</td>
+                    <td class="num delta-pos">+5</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#12</td>
+                    <td class="agent-name">Manpreet Mukherjee</td>
+                    <td>Billing <span class="sub-text">(Indore)</span></td>
+                    <td class="num"><strong>6</strong></td>
+                    <td class="num">5</td>
+                    <td class="num delta-pos">+1</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#13</td>
+                    <td class="agent-name">Shreya Kumar</td>
+                    <td>Chat Frontline <span class="sub-text">(Indore)</span></td>
+                    <td class="num"><strong>6</strong></td>
+                    <td class="num">5</td>
+                    <td class="num delta-pos">+1</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#14</td>
+                    <td class="agent-name">Kabir Mathew</td>
+                    <td>Email Frontline <span class="sub-text">(Indore)</span></td>
+                    <td class="num"><strong>5</strong></td>
+                    <td class="num">6</td>
+                    <td class="num delta-neg">-1</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#15</td>
+                    <td class="agent-name">Pooja Patil</td>
+                    <td>Returns Desk <span class="sub-text">(Indore)</span></td>
+                    <td class="num"><strong>5</strong></td>
+                    <td class="num">4</td>
+                    <td class="num delta-pos">+1</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#16</td>
+                    <td class="agent-name">Diya Malhotra</td>
+                    <td>Billing <span class="sub-text">(Bengaluru)</span></td>
+                    <td class="num"><strong>5</strong></td>
+                    <td class="num">3</td>
+                    <td class="num delta-pos">+2</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#17</td>
+                    <td class="agent-name">Sukhwinder Bose</td>
+                    <td>Email Frontline <span class="sub-text">(Bengaluru)</span></td>
+                    <td class="num"><strong>5</strong></td>
+                    <td class="num">2</td>
+                    <td class="num delta-pos">+3</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#18</td>
+                    <td class="agent-name">Tenzin Saxena</td>
+                    <td>Chat Frontline <span class="sub-text">(Bengaluru)</span></td>
+                    <td class="num"><strong>4</strong></td>
+                    <td class="num">8</td>
+                    <td class="num delta-neg">-4</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#19</td>
+                    <td class="agent-name">Rahul Sen</td>
+                    <td>Chat Frontline <span class="sub-text">(Bengaluru)</span></td>
+                    <td class="num"><strong>4</strong></td>
+                    <td class="num">5</td>
+                    <td class="num delta-neg">-1</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#20</td>
+                    <td class="agent-name">Rohit Yadav</td>
+                    <td>Chat Frontline <span class="sub-text">(Indore)</span></td>
+                    <td class="num"><strong>4</strong></td>
+                    <td class="num">5</td>
+                    <td class="num delta-neg">-1</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#21</td>
+                    <td class="agent-name">Zoya Srivastava</td>
+                    <td>Chat Frontline <span class="sub-text">(Indore)</span></td>
+                    <td class="num"><strong>4</strong></td>
+                    <td class="num">4</td>
+                    <td class="num ">0</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#22</td>
+                    <td class="agent-name">Farah George</td>
+                    <td>Voice Frontline <span class="sub-text">(Indore)</span></td>
+                    <td class="num"><strong>4</strong></td>
+                    <td class="num">2</td>
+                    <td class="num delta-pos">+2</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#23</td>
+                    <td class="agent-name">Gurpreet Kulkarni</td>
+                    <td>Logistics <span class="sub-text">(Bengaluru)</span></td>
+                    <td class="num"><strong>3</strong></td>
+                    <td class="num">6</td>
+                    <td class="num delta-neg">-3</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#24</td>
+                    <td class="agent-name">Aishwarya Shinde</td>
+                    <td>Chat Frontline <span class="sub-text">(Bengaluru)</span></td>
+                    <td class="num"><strong>3</strong></td>
+                    <td class="num">5</td>
+                    <td class="num delta-neg">-2</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#25</td>
+                    <td class="agent-name">Manpreet Iyer</td>
+                    <td>Chat Frontline <span class="sub-text">(Bengaluru)</span></td>
+                    <td class="num"><strong>3</strong></td>
+                    <td class="num">4</td>
+                    <td class="num delta-neg">-1</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#26</td>
+                    <td class="agent-name">Manish Jain</td>
+                    <td>Chat Frontline <span class="sub-text">(Indore)</span></td>
+                    <td class="num"><strong>3</strong></td>
+                    <td class="num">2</td>
+                    <td class="num delta-pos">+1</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#27</td>
+                    <td class="agent-name">Riya Siddiqui</td>
+                    <td>Voice Frontline <span class="sub-text">(Bengaluru)</span></td>
+                    <td class="num"><strong>3</strong></td>
+                    <td class="num">2</td>
+                    <td class="num delta-pos">+1</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#28</td>
+                    <td class="agent-name">Mohammed Kaur</td>
+                    <td>Voice Frontline <span class="sub-text">(Indore)</span></td>
+                    <td class="num"><strong>3</strong></td>
+                    <td class="num">1</td>
+                    <td class="num delta-pos">+2</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#29</td>
+                    <td class="agent-name">Kavya Goyal</td>
+                    <td>Chat Frontline <span class="sub-text">(Bengaluru)</span></td>
+                    <td class="num"><strong>2</strong></td>
+                    <td class="num">6</td>
+                    <td class="num delta-neg">-4</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#30</td>
+                    <td class="agent-name">Vihaan Dutta</td>
+                    <td>Voice Frontline <span class="sub-text">(Bengaluru)</span></td>
+                    <td class="num"><strong>2</strong></td>
+                    <td class="num">2</td>
+                    <td class="num ">0</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#31</td>
+                    <td class="agent-name">Yash Mittal</td>
+                    <td>Email Frontline <span class="sub-text">(Bengaluru)</span></td>
+                    <td class="num"><strong>2</strong></td>
+                    <td class="num">1</td>
+                    <td class="num delta-pos">+1</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#32</td>
+                    <td class="agent-name">Faisal Pereira</td>
+                    <td>Chat Frontline <span class="sub-text">(Indore)</span></td>
+                    <td class="num"><strong>1</strong></td>
+                    <td class="num">4</td>
+                    <td class="num delta-neg">-3</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#33</td>
+                    <td class="agent-name">Sameer Menon</td>
+                    <td>Chat Frontline <span class="sub-text">(Indore)</span></td>
+                    <td class="num"><strong>1</strong></td>
+                    <td class="num">4</td>
+                    <td class="num delta-neg">-3</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#34</td>
+                    <td class="agent-name">Sameer Agarwal</td>
+                    <td>Chat Frontline <span class="sub-text">(Bengaluru)</span></td>
+                    <td class="num"><strong>1</strong></td>
+                    <td class="num">2</td>
+                    <td class="num delta-neg">-1</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#35</td>
+                    <td class="agent-name">Shreya Dhillon</td>
+                    <td>Chat Frontline <span class="sub-text">(Bengaluru)</span></td>
+                    <td class="num"><strong>1</strong></td>
+                    <td class="num">2</td>
+                    <td class="num delta-neg">-1</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#36</td>
+                    <td class="agent-name">Ankit Ansari</td>
+                    <td>Email Frontline <span class="sub-text">(Bengaluru)</span></td>
+                    <td class="num"><strong>1</strong></td>
+                    <td class="num">1</td>
+                    <td class="num ">0</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#37</td>
+                    <td class="agent-name">Ayaan Dutta</td>
+                    <td>Chat Frontline <span class="sub-text">(Bengaluru)</span></td>
+                    <td class="num"><strong>1</strong></td>
+                    <td class="num">1</td>
+                    <td class="num ">0</td>
+                </tr>
+                <tr>
+                    <td class="rank-col">#38</td>
+                    <td class="agent-name">Mohammed Jadhav</td>
+                    <td>Billing <span class="sub-text">(Indore)</span></td>
+                    <td class="num"><strong>1</strong></td>
+                    <td class="num">1</td>
+                    <td class="num ">0</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Tier 2 Separate Section -->
+        <div class="tier2-block">
+            <div class="tier2-header">Tier 2 Escalations & Warranty Team — Resolution Efficiency</div>
+            <div class="tier2-sub">Measured on median days-to-resolution per policy §6 (Not ranked by ticket volume).</div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Agent Name</th>
+                        <th>Team / Site</th>
+                        <th class="num">Cases Closed This Week</th>
+                        <th class="num">Median Days-to-Resolution</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="agent-name">Vivaan Kulkarni</td>
+                        <td>Escalations & Warranty <span class="sub-text">(Indore)</span></td>
+                        <td class="num">1</td>
+                        <td class="num"><strong>12.1 days</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="agent-name">Sai Sharma</td>
+                        <td>Escalations & Warranty <span class="sub-text">(Bengaluru)</span></td>
+                        <td class="num">3</td>
+                        <td class="num"><strong>8.3 days</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="agent-name">Deepak Mathew</td>
+                        <td>Escalations & Warranty <span class="sub-text">(Indore)</span></td>
+                        <td class="num">2</td>
+                        <td class="num"><strong>8.2 days</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="agent-name">Aishwarya Kaur</td>
+                        <td>Escalations & Warranty <span class="sub-text">(Bengaluru)</span></td>
+                        <td class="num">2</td>
+                        <td class="num"><strong>6.1 days</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="agent-name">Rahul Gupta</td>
+                        <td>Escalations & Warranty <span class="sub-text">(Bengaluru)</span></td>
+                        <td class="num">1</td>
+                        <td class="num"><strong>4.2 days</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="agent-name">Meera Joshi</td>
+                        <td>Escalations & Warranty <span class="sub-text">(Indore)</span></td>
+                        <td class="num">2</td>
+                        <td class="num"><strong>2.1 days</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="caveat-box">
+            <strong>Policy Caveat (§6 & §10):</strong> Tier 1 agents are ranked strictly by tickets closed (resolved + closed). This volume metric does not account for ticket complexity, category difficulty, or handle time. Tier 2 agents are evaluated separately on resolution time.
+        </div>
+
+        <footer>
+            <span>Vireo Audio Support Intelligence System &bull; Confidential Internal Leaderboard</span>
+        </footer>
+    </div>
+</body>
+</html>
