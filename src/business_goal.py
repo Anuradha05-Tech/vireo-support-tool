@@ -16,7 +16,7 @@ from src.config import (
 )
 
 
-def run_business_goal_calculator(target_rate_pct: float = 10.00):
+def run_business_goal_calculator(target_rate_pct: float = 9.00):
     print("=" * 80)
     print("STAGE 8 — BUSINESS GOAL & FINANCIAL ROI CALCULATOR")
     print("=" * 80)
@@ -79,18 +79,19 @@ def run_business_goal_calculator(target_rate_pct: float = 10.00):
     quarterly_cost_raw = (total_ytd_cost_raw / 5.0) * 3.0       # ₹84,660.00 / qtr
     quarterly_cost_adj = (total_ytd_cost_adj / 5.0) * 3.0       # ₹71,961.00 / qtr
 
-    # 4. Compute Target Rate Savings (at 10.00% target rate)
-    target_quarterly_repeats = quarterly_resolved * (target_rate_pct / 100.0) # 235.56 repeats/qtr
+    # 4. Compute Target Rate Savings (at target_rate_pct = 9.00%)
+    target_quarterly_repeats = quarterly_resolved * (target_rate_pct / 100.0) # 212.004 repeats/qtr
     target_quarterly_cost = target_quarterly_repeats * avg_cost_per_repeat
 
     # Raw Pre-Validation Savings
-    qtr_savings_raw = quarterly_cost_raw - target_quarterly_cost # ₹23,220.81 / qtr
-    annual_savings_raw = qtr_savings_raw * 4.0                    # ₹92,883.24 / yr
+    qtr_savings_raw = quarterly_cost_raw - target_quarterly_cost # ₹29,366.54 / qtr
+    annual_savings_raw = qtr_savings_raw * 4.0                    # ₹117,466.16 / yr
     raw_pp_reduction = raw_repeat_rate - target_rate_pct
 
     # Precision-Adjusted Final Savings
-    qtr_savings_adj = quarterly_cost_adj - target_quarterly_cost # ₹10,521.81 / qtr (~₹10,522)
-    annual_savings_adj = qtr_savings_adj * 4.0                    # ₹42,087.24 / yr (~₹42,087)
+    eliminated_qtr_repeats_adj = quarterly_repeats_adj - target_quarterly_repeats # ~63.91 (~64)
+    qtr_savings_adj = quarterly_cost_adj - target_quarterly_cost # ₹16,667.54 / qtr (~₹16,668)
+    annual_savings_adj = qtr_savings_adj * 4.0                    # ₹66,670.14 / yr (~₹66,670)
     adj_pp_reduction = adj_repeat_rate - target_rate_pct
     adj_relative_reduction = (adj_pp_reduction / adj_repeat_rate) * 100
 
@@ -108,9 +109,10 @@ def run_business_goal_calculator(target_rate_pct: float = 10.00):
     print("-" * 80)
     print(f"Target Repeat Rate                 : {target_rate_pct:.2f}%{'':<23} {target_rate_pct:.2f}%")
     print(f"Rate Reduction (pp / relative)     : {raw_pp_reduction:.2f} pp{'':<18} {adj_pp_reduction:.2f} pp (~{adj_relative_reduction:.1f}% rel)")
+    print(f"Eliminated Repeats / Quarter       : {quarterly_repeats_raw - target_quarterly_repeats:.2f}{'':<20} {eliminated_qtr_repeats_adj:.2f} (~{round(eliminated_qtr_repeats_adj)})")
     print(f"Target Quarterly Cost              : ₹{target_quarterly_cost:,.2f} / qtr{'':<10} ₹{target_quarterly_cost:,.2f} / qtr")
-    print(f"Projected Quarterly Savings        : ₹{qtr_savings_raw:,.2f} / qtr{'':<10} ₹{qtr_savings_adj:,.2f} / qtr")
-    print(f"Projected Annual Savings           : ₹{annual_savings_raw:,.2f} / yr{'':<9} ₹{annual_savings_adj:,.2f} / yr")
+    print(f"Projected Quarterly Savings        : ₹{qtr_savings_raw:,.2f} / qtr{'':<10} ₹{qtr_savings_adj:,.2f} / qtr (~₹{round(qtr_savings_adj):,})")
+    print(f"Projected Annual Savings           : ₹{annual_savings_raw:,.2f} / yr{'':<9} ₹{annual_savings_adj:,.2f} / yr (~₹{round(annual_savings_adj):,})")
     print("=" * 80)
 
     # 5. Format Corrected Ready-to-Paste Executive Paragraph
@@ -121,10 +123,10 @@ CORRECTED EXECUTIVE PARAGRAPH (FOR MEMO & SUBMISSION FORM)
 BUSINESS GOAL & FINANCIAL ROI:
 Over the 2026 YTD censoring-safe baseline period (Jan–May 2026, n=3,926 resolved tickets), Vireo Audio experienced a precision-adjusted repeat-contact rate of 11.71% (460 confirmed repeat contacts, down from a raw structural count of 541 / 13.78% prior to applying our human-validated 85% precision factor). This represents a baseline operational loss of ₹71,961 per quarter (~₹2.88 Lakhs annually; ₹1,19,935 across 5 months).
 
-By setting an operational target to reduce the repeat-contact rate from 11.71% down to 10.00% (a 1.71 percentage-point reduction, representing a realistic ~14.6% relative reduction from baseline), Vireo Audio will eliminate ~40 verified repeat contacts per quarter. At the channel-weighted average cost of ₹260.81 per contact, this yields direct, verifiable cost savings of ₹10,522 per quarter (₹42,087 annually).
+By setting an operational target to reduce the repeat-contact rate from 11.71% down to 9.00% (a 2.71 percentage-point reduction, representing a realistic ~23% relative reduction from baseline), Vireo Audio will eliminate ~64 verified repeat contacts per quarter. At the channel-weighted average cost of ₹260.81 per contact, this yields direct, verifiable cost savings of ₹16,668 per quarter (₹66,670 annually). A 9% target is informed by our own category-tag audit, which found ~9% of tickets are mis-tagged at intake (Stage 3 finding) — a concrete, addressable source of first-contact issues going unresolved, independent of any new headcount or process change.
 
 Transparency Note (Pre-Validation Raw Baseline):
-Before human validation adjustment (85% precision across n=40 sampled pairs), raw structural category+SKU matching flagged 541 repeat contacts (13.78% rate, ₹84,660/quarter baseline loss). Reducing raw structural matches to 10.00% would project ₹23,220/quarter savings.
+Before human validation adjustment (85% precision across n=40 sampled pairs), raw structural category+SKU matching flagged 541 repeat contacts (13.78% rate, ₹84,660/quarter baseline loss). Reducing raw structural matches to 9.00% would project ₹29,367/quarter savings.
 
 Separate Observation (Stage 5 Language Sweep):
 Population Confirmation: The Stage 5 repeat-language figure was computed strictly over resolved/closed tickets that were NOT already flagged as structural repeats by Stage 4 (a mutually exclusive, non-overlapping population). An additional 7.62% of tickets contain language suggesting a prior unresolved contact ("already called", "spoke to your colleague", "still waiting") that our structural 30-day match did not catch—this is a directional signal from unverified text matching, not a confirmed repeat-contact count, and is not included in the headline rate or the savings calculation.
@@ -142,4 +144,3 @@ Population Confirmation: The Stage 5 repeat-language figure was computed strictl
 
 if __name__ == "__main__":
     run_business_goal_calculator()
-

@@ -469,7 +469,7 @@ def run_summary_dashboard():
         <!-- 1. HERO SECTION -->
         <section class="hero-section">
             <div class="hero-title">
-                <span class="hero-highlight">11.71%</span> of resolved tickets result in a repeat contact within 30 days, costing <span class="hero-highlight">≈₹71,961</span>/quarter. Reducing this to <span class="hero-highlight">10.00%</span> would save <span class="hero-highlight">≈₹10,522</span>/quarter.
+                <span class="hero-highlight">11.71%</span> of resolved tickets result in a repeat contact within 30 days, costing <span class="hero-highlight">≈₹71,961</span>/quarter. Reducing this to <span class="hero-highlight">9.00%</span> would save <span class="hero-highlight">≈₹16,668</span>/quarter.
             </div>
         </section>
 
