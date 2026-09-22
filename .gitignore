@@ -1,4 +1,27 @@
+# Data directory (contains provided CSVs and PDF)
 data/
+
+# Environment variables
 .env
+.env.local
+
+# Python bytecode & cache
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+.DS_Store
