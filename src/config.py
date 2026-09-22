@@ -17,13 +17,25 @@ REPORTS_DIR = PROJECT_ROOT / "reports"
 VALIDATION_DIR = PROJECT_ROOT / "validation"
 DOCS_DIR = PROJECT_ROOT / "docs"
 
-# Expected Data File Paths
-TICKETS_CSV_PATH = DATA_DIR / "tickets.csv"
-AGENTS_CSV_PATH = DATA_DIR / "agents.csv"
-CUSTOMERS_CSV_PATH = DATA_DIR / "customers.csv"
-ORDERS_CSV_PATH = DATA_DIR / "orders.csv"
-PRODUCTS_CSV_PATH = DATA_DIR / "products.csv"
-SUPPORT_POLICY_PDF_PATH = DATA_DIR / "support-policy.pdf"
+def resolve_data_file(pattern: str, default_name: str) -> Path:
+    """Find a file in DATA_DIR matching a glob pattern or exact name."""
+    exact = DATA_DIR / default_name
+    if exact.exists():
+        return exact
+    matches = list(DATA_DIR.glob(pattern))
+    if matches:
+        return matches[0]
+    return exact
+
+# Expected Data File Paths (resolved dynamically to handle UUID-prefixed filenames)
+TICKETS_CSV_PATH = resolve_data_file("*tickets*.csv", "tickets.csv")
+AGENTS_CSV_PATH = resolve_data_file("*agents*.csv", "agents.csv")
+CUSTOMERS_CSV_PATH = resolve_data_file("*customers*.csv", "customers.csv")
+ORDERS_CSV_PATH = resolve_data_file("*orders*.csv", "orders.csv")
+PRODUCTS_CSV_PATH = resolve_data_file("*products*.csv", "products.csv")
+SUPPORT_POLICY_PDF_PATH = resolve_data_file("*support*.pdf", "support-policy.pdf")
+README_TXT_PATH = resolve_data_file("*README*.txt", "README.txt")
+EMAIL_THREAD_TXT_PATH = resolve_data_file("*email*.txt", "email-thread.txt")
 
 # Financial & Policy Constants (Values confirmed from support-policy.pdf & architecture doc)
 BLEND_COST_PER_CONTACT_INR = 290.0
