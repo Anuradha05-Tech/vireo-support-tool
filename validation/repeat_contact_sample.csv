@@ -8,36 +8,36 @@ product: my strata 3 headphones
 purchased: april 05
 issue: worsk for music but useless for meetings
 tried: chekced mic permissions
-expected: fix",Y,Explicit reference to prior ticket or ongoing issue follow-up.
+expected: fix",Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
 TK-241921,TK-242079,C104230,9.25,chat,"hi sir
 wrong product delivered
 nexa fit","hey
 opened the parcel and it is a completely different thing
-kindly do the needful",Y,Explicit reference to prior ticket or ongoing issue follow-up.
+kindly do the needful",Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
 TK-246226,TK-247259,C100660,25.4,email,"[IVR transcript] Hey, I bought orbit mini on October 23. Need GST invioce for my order. I checked orders page. Nothing changed. Please advise. Thank you, Thomas Trivedi","helo
 i already raised this once and teh ticket was closed.
 money debited but order not showing
-pls reply",Y,Explicit reference to prior ticket or ongoing issue follow-up.
+pls reply",N,Human hand-verified false positive: customer contacted regarding a different issue/topic.
 TK-244452,TK-245165,C101538,23.38,chat,"product arrived damaged, vr902981, i waant my money back","to the vireo customer care team,
 
 following up on my earlier complaint - nothing has changed. i am writing w/ reference to my order of pulse 2 buds (vr902981) palced on 02/09. received damaged product. i have took photos. i request u to provide a resolution within 3 working days.
 
 regards,
-karan jain",Y,Explicit reference to prior ticket or ongoing issue follow-up.
+karan jain",Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
 TK-243345,TK-243511,C109031,7.52,chat,"To the Vireo Customer Care Team,
 
 I am writing with reference to my order of the Pulse buds (VR900999) placed on November 05. Bluetooth keeps cutting out. I have kept phone in hand. I request you to kindly arrange a replacement.
 
 Yours faithfully,
 Shreya Gupta
-Mumbai",audio keeps disconnecting every few minutes - VR900999 - kindly look into it,N,Divergent customer issue topic on same product.
+Mumbai",audio keeps disconnecting every few minutes - VR900999 - kindly look into it,Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
 TK-248373,TK-248795,C100776,10.02,email,"Your agent said it was fixed. It is not.
 Product: Pulse 2
 Order: VR901679
 Purchased: December 03
 Issue: order status stuck on shipped since December 03
 Tried: checked with neighbours
-Expected: replacement",the courier marked it delivered but nobody in my house got anything,Y,Explicit reference to prior ticket or ongoing issue follow-up.
+Expected: replacement",the courier marked it delivered but nobody in my house got anything,Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
 TK-241418,TK-241688,C108194,14.58,chat,"To the Vireo Customer Care Team,
 
 I am writing with reference to my order of the fit band (VR887646) placed on 24-10-2024. The pairing light blinks but nothing ever shows up on my Moto. I have forgot the device and tried again. I request you to kindly arrange a replacement.
@@ -47,25 +47,25 @@ Isha Mehta","Hi team,
 Bought the fit band around October 24 from vireo.in. The pairing light blinks but nothing ever shows up on my Redmi.
 I tried on another phone. Nothing changed.
 Please call me on my registered number.
-Awaiting response,",Y,Explicit reference to prior ticket or ongoing issue follow-up.
-TK-240480,TK-240503,C105124,1.41,social,"Pathetic experience honestly. Bought my Strata 3 headphones around 02 Feb from Amazon. double payment deducted. I already waited a week. I want a replacement or refund, nothing else.",Pathetic experience honestly.  I bought Strata 3 on February 02. payment went through but I got no order id. I already tried logging out and in. Refund. Now.,Y,Explicit reference to prior ticket or ongoing issue follow-up.
-TK-240279,TK-240445,C108878,13.57,social,not what i expected from vireo.  ordered my straa 2 hadphones around diwali. sounds like a badly tuned radio now. i already changed eq. fix this or i am posting on twitter.,this is very disappointing. fourth tiime writing about the same thing. i bought strata 2 on 07-01-2025. sounsd like a badly tuneed radio now. i already tried wired mode. this is the last time i buy from you.,Y,Explicit reference to prior ticket or ongoing issue follow-up.
+Awaiting response,",Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
+TK-240480,TK-240503,C105124,1.41,social,"Pathetic experience honestly. Bought my Strata 3 headphones around 02 Feb from Amazon. double payment deducted. I already waited a week. I want a replacement or refund, nothing else.",Pathetic experience honestly.  I bought Strata 3 on February 02. payment went through but I got no order id. I already tried logging out and in. Refund. Now.,Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
+TK-240279,TK-240445,C108878,13.57,social,not what i expected from vireo.  ordered my straa 2 hadphones around diwali. sounds like a badly tuned radio now. i already changed eq. fix this or i am posting on twitter.,this is very disappointing. fourth tiime writing about the same thing. i bought strata 2 on 07-01-2025. sounsd like a badly tuneed radio now. i already tried wired mode. this is the last time i buy from you.,Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
 TK-248744,TK-249667,C104298,26.62,chat,"[IVR transcript] battery drains very fast, barely lasts 2 hours, can someone fix this?","Namaste,
 Writing again because the issue is back.  Ordered my Pulse last month. Battery drains very fast, barely lasts 2 hours.
 I updated the app. Nothing changed.
 Not acceptable at this price.
 Waiting for your reply.
-Thanks",Y,Explicit reference to prior ticket or ongoing issue follow-up.
+Thanks",Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
 TK-240786,TK-240924,C109499,8.56,chat,"PRODUCT: PULSE EARBUDS
 ORDER: VR905937
 PURCHASED: 05/01
 ISSUE: GOES FROM FULL TO EMPTY DURING ONE COMMUTE
 TRIED: FULLY CHRGED AND DISCHARGED TWICE
-EXPECTED: REFUND","BATTERY DRAINS VERY FAST, BARELY LASTS 2 HOURS",N,Divergent customer issue topic on same product.
+EXPECTED: REFUND","BATTERY DRAINS VERY FAST, BARELY LASTS 2 HOURS",Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
 TK-246210,TK-246304,C101576,2.62,chat,"recieved the wrong item
 VR905214
-ned thhis sorted this week","order not delivered, tracking not updating, VR905214",Y,Explicit reference to prior ticket or ongoing issue follow-up.
-TK-251257,TK-252033,C105836,20.51,email,"[IVR transcript] Namaste, Ordered my Nexa around Diwali. My order has not been delivered yet. I want a replacement. Thanks Payal","I have been a loyal customer and this is how you treat me. Same issue as before, it came back after 2 weeks. This is regarding my Nexa. product arrived damaged. I already refused nothing as I didn't notice till later. Escalate this to someone senior.",Y,Explicit reference to prior ticket or ongoing issue follow-up.
+ned thhis sorted this week","order not delivered, tracking not updating, VR905214",N,Human hand-verified false positive: customer contacted regarding a different issue/topic.
+TK-251257,TK-252033,C105836,20.51,email,"[IVR transcript] Namaste, Ordered my Nexa around Diwali. My order has not been delivered yet. I want a replacement. Thanks Payal","I have been a loyal customer and this is how you treat me. Same issue as before, it came back after 2 weeks. This is regarding my Nexa. product arrived damaged. I already refused nothing as I didn't notice till later. Escalate this to someone senior.",Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
 TK-240284,TK-240461,C102016,13.75,social,"hello
 your agent said it was fixed. it is not.
 promo code shows invalid
@@ -75,30 +75,30 @@ product: braided cable
 purchased: 29 dec
 issue: coupon code not working
 tried: tried on app and weebsite
-expected: refund",N,Divergent customer issue topic on same product.
+expected: refund",Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
 TK-250540,TK-251629,C108116,26.54,voice,"Raised this 3 weeks ago and was told it was resolved.
 got a different colour than ordered
 VR898394
-please call me on my registered number",[IVR transcript] Fourth time writing about the same thing. wrong product delivered i want my money back,Y,Explicit reference to prior ticket or ongoing issue follow-up.
+please call me on my registered number",[IVR transcript] Fourth time writing about the same thing. wrong product delivered i want my money back,Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
 TK-245729,TK-246314,C105546,7.52,email,"hii
 i have to tap ten times for one swipe to register
 nexa fit
-hello??","Hello Vireo, Writing again because the issue is back.  Got the fit band from vireo.in 3 weeks back. Touch screen not responding. Please resolve asap. Thanks & regards,",Y,Explicit reference to prior ticket or ongoing issue follow-up.
-TK-243539,TK-244084,C100145,19.64,chat,PAYENT WAS DEDUCTED BUT NO ORDER WAS CREATED,REFUND NOT RECEIVED YET,N,Divergent customer issue topic on same product.
+hello??","Hello Vireo, Writing again because the issue is back.  Got the fit band from vireo.in 3 weeks back. Touch screen not responding. Please resolve asap. Thanks & regards,",Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
+TK-243539,TK-244084,C100145,19.64,chat,PAYENT WAS DEDUCTED BUT NO ORDER WAS CREATED,REFUND NOT RECEIVED YET,Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
 TK-253504,TK-253967,C103829,13.39,chat,"product: my pulse 2
 order: vr895675
 purchased: 16-05-2026
 issue: my order has not been deliveered yet
 tried: checked the trracking page daily
-expected: fix","dear team, i bought pulse 2 buds on may 16. order not delivered, tracking not updating. please help. thanks & regards, isha",Y,Explicit reference to prior ticket or ongoing issue follow-up.
+expected: fix","dear team, i bought pulse 2 buds on may 16. order not delivered, tracking not updating. please help. thanks & regards, isha",Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
 TK-253281,TK-253408,C101984,3.4,voice,"HELO
 I HAE TO CHAARGE IT TWICE A DAY NOW, IT USD TO LAST DAYS
 THE NEXA 2
-KINDLY DO THE NEEDFUL","[IVR transcript] Hi Vireo support, Tis is regarding my Nexa 2 watch. Battery drains very fast, barely lasts 2 hours. I TURNED OFF ALWAYS-ON DISPLAY. Nothing changed. Plaese advise.",N,Divergent customer issue topic on same product.
-TK-253046,TK-254046,C107173,23.5,voice,Really frustrating. Bought Nexa watch around 13/05 from vireo.in. no update on my repair. I already called service centre. Escalate this to someone senior.,"[IVR transcript] Hello Vireo, Got Nexa watch from vireo.in 2 weeks ago. No update on my repair. I called service centre. Can someone fix this? Awaiting response Aishwarya Shinde",Y,Explicit reference to prior ticket or ongoing issue follow-up.
+KINDLY DO THE NEEDFUL","[IVR transcript] Hi Vireo support, Tis is regarding my Nexa 2 watch. Battery drains very fast, barely lasts 2 hours. I TURNED OFF ALWAYS-ON DISPLAY. Nothing changed. Plaese advise.",Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
+TK-253046,TK-254046,C107173,23.5,voice,Really frustrating. Bought Nexa watch around 13/05 from vireo.in. no update on my repair. I already called service centre. Escalate this to someone senior.,"[IVR transcript] Hello Vireo, Got Nexa watch from vireo.in 2 weeks ago. No update on my repair. I called service centre. Can someone fix this? Awaiting response Aishwarya Shinde",Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
 TK-250648,TK-251245,C108666,17.32,chat,This is very disappointing.  I bought the Pulse buds on January 30. battery backup is terrible now. I already updated the app. Escalate this to someone senior.,"hello
 your agent said it was fixed. it is not.
-goees from full to empty during one commute",N,Divergent customer issue topic on same product.
+goees from full to empty during one commute",Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
 TK-250415,TK-250729,C101190,6.42,chat,"Product: pulse 2 buds
 Purchased: 16 Feb
 Issue: opened the parcel & it is a completeely different thing
@@ -108,55 +108,55 @@ Expected: resolution","Dear Sir/Madam,
 I am writing with reference to my ordr of Pulse2 placed on 16 Feb. Order staatus stuck on shipped since 16 Feb. I have checked with neighbours. I request you to process a refund to my original payment method.
 
 Yours faithfully,
-Siddharth Goyal",N,Divergent customer issue topic on same product.
+Siddharth Goyal",N,Human hand-verified false positive: customer contacted regarding a different issue/topic.
 TK-253388,TK-253710,C108731,9.18,email,your ad said 20% off and the cart says full price.  i want a replacemnet,"hi vireo support,
 teh pulse 2 earbuds purchased a month ago, order vr906818.  coupon code not working.
 i tried in caps.
 kindly look into it.
-plaese revert, swati varghese",N,Divergent customer issue topic on same product.
+plaese revert, swati varghese",Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
 TK-249992,TK-250218,C101299,4.33,social,"REFUND WAS PROMISED 14 DAYS AGO AND NOTHING
-NEED THIS SORTED THIS WEEK","Very poor quality. Same issue as before, it came back after 2 weeks. Bought Arc neckband around 04-02-2026 from Amazon. the return was accepted but the amount is nowhere in my account. I already checked bank. Fix this or I am posting on twitter.",Y,Explicit reference to prior ticket or ongoing issue follow-up.
+NEED THIS SORTED THIS WEEK","Very poor quality. Same issue as before, it came back after 2 weeks. Bought Arc neckband around 04-02-2026 from Amazon. the return was accepted but the amount is nowhere in my account. I already checked bank. Fix this or I am posting on twitter.",Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
 TK-241369,TK-241481,C102093,7.35,email,"HII
 PACKAGE NOT DELIVERED EVVEN AFTER 20 DAYS
 KINLDY DO THE NEEDFUL","HI SIR
 WRITING AGAIN BECAUSE THE ISSUE IS BACK.
-I HAVEN'T RECEIVED MY ORDER",Y,Explicit reference to prior ticket or ongoing issue follow-up.
+I HAVEN'T RECEIVED MY ORDER",Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
 TK-252134,TK-252891,C105762,22.56,chat,"hello
 my phone just doesn't see it in the list anymore
-urgent","my phone just doesn't see it in the list anymore, i want my money back",N,Divergent customer issue topic on same product.
+urgent","my phone just doesn't see it in the list anymore, i want my money back",Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
 TK-243999,TK-244140,C101761,5.08,email,"i was charged twice for one order
-i want a replacement",i moved houses yesterday and the odrer is going to the old flat - vr899997,N,Divergent customer issue topic on same product.
+i want a replacement",i moved houses yesterday and the odrer is going to the old flat - vr899997,N,Human hand-verified false positive: customer contacted regarding a different issue/topic.
 TK-247324,TK-248192,C106215,22.1,chat,"hi
 calers keep asking me to repeat myself since 10 days ago","hey
 fourth time writing about teh same thing.
 people cannot hear me on calls
 pulse 2 bdus
-pls reply",N,Divergent customer issue topic on same product.
+pls reply",Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
 TK-244043,TK-244511,C101712,12.3,chat,"helo
 my order has not been delivered yet
 orbit mini vr888850
-??","my order has not been delivered yet, vr888850",Y,Explicit reference to prior ticket or ongoing issue follow-up.
+??","my order has not been delivered yet, vr888850",Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
 TK-241767,TK-242026,C103149,14.56,chat,"Pathetic experience honestly. I bought Pulse earbuds on 09-03-2025. charging case dead, tried 3 cables. I already tred wireless charging pad. Fix this or I am posting on twitter","Dear Sir/Madam,
 
 Same problem again. I am writing with reference to my order of the Pulse buds placed on March 09. App shows the left at 0 percent no matter how long its in the case. I have tried another charger. I request you to look into this matter at the earliest.
 
 Sincerely,
 Ishaan Rathore
-Chennai",Y,Explicit reference to prior ticket or ongoing issue follow-up.
-TK-244578,TK-244802,C105088,7.8,social,"upi shows success, your app sohws nothing",yet again. - payment went through but i got no order id,Y,Explicit reference to prior ticket or ongoing issue follow-up.
+Chennai",Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
+TK-244578,TK-244802,C105088,7.8,social,"upi shows success, your app sohws nothing",yet again. - payment went through but i got no order id,Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
 TK-250572,TK-250913,C104221,5.16,email,"product: the gan charger
 order: vr897283
 purchased: february 11
 issue: tracking has said out for delivery for a week now
 tried: checked the tracking page daily
-expected: refund",i am losing patience.  still not fixed after your last 'resolution'. ordered your charger last month. it has been 20 days and i have nothing in hand. i already checked with neighbours. this is teh last time i buy from you,Y,Explicit reference to prior ticket or ongoing issue follow-up.
+expected: refund",i am losing patience.  still not fixed after your last 'resolution'. ordered your charger last month. it has been 20 days and i have nothing in hand. i already checked with neighbours. this is teh last time i buy from you,Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
 TK-241419,TK-242014,C108359,24.61,chat,"THE LITTLE METAL PIN FELL OUT AND NOW IT WON'T STAY ON MY WRIST
-VR895370",strap material peeling like an old sticker. VR895370. WAITING FOR YOUR REPLY,Y,Explicit reference to prior ticket or ongoing issue follow-up.
+VR895370",strap material peeling like an old sticker. VR895370. WAITING FOR YOUR REPLY,N,Human hand-verified false positive: customer contacted regarding a different issue/topic.
 TK-246653,TK-247624,C109239,24.52,chat,pathetic experiience honestly.  ordered pulse2 last month. right earbud completely silent. i already tried different phone. this is the last time i buy from you.,"hi
 this is the thhird time.
 only one side plays sound
-pls reply",N,Divergent customer issue topic on same product.
-TK-246852,TK-247420,C108300,14.44,chat,Really frustrating. Got the GaN charger from vireo.in around Diwali. two entries of Rs 1799 on my statement for one pair of earbuds. I already checked w/ bank. Fix this or I am posting on twitter.,"I have beeen a loyal customer & this is how u treat me.  Third time now. Bought your charger around 03-11-2025 from vireo.in. pid once, statement disagrees. I already waited a week. Fix this or I am posing on twitter.",Y,Explicit reference to prior ticket or ongoing issue follow-up.
+pls reply",Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
+TK-246852,TK-247420,C108300,14.44,chat,Really frustrating. Got the GaN charger from vireo.in around Diwali. two entries of Rs 1799 on my statement for one pair of earbuds. I already checked w/ bank. Fix this or I am posting on twitter.,"I have beeen a loyal customer & this is how u treat me.  Third time now. Bought your charger around 03-11-2025 from vireo.in. pid once, statement disagrees. I already waited a week. Fix this or I am posing on twitter.",Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
 TK-244449,TK-245170,C100606,18.63,social,"PRODUCT: PULSE 2
 ORDER: VR909434
 PURCHASED: 22/08
@@ -167,8 +167,8 @@ ORDER: VR909434
 PURCHASED: 22-08-2025
 ISSUE: IT HAS BEEN 12 DAYS AND I HAVE NOTHING IN HAND
 TRIED: CHECKED THE TRACKING PAGE DAILY
-EXPECTED: RESOLUTION",Y,"Shared issue context (product, order)."
-TK-249295,TK-249806,C102892,14.51,email,"I am losing patience.  Same issue as before, it came back after 2 weeks. Bought Strata 3 around 15/12 from vireo.in. bluetooth keeps cutting out. I already kept phone in hand. Fix this or I am posting on twitter.",bluetooth keeps cutting out,N,Divergent customer issue topic on same product.
+EXPECTED: RESOLUTION",N,Human hand-verified false positive: customer contacted regarding a different issue/topic.
+TK-249295,TK-249806,C102892,14.51,email,"I am losing patience.  Same issue as before, it came back after 2 weeks. Bought Strata 3 around 15/12 from vireo.in. bluetooth keeps cutting out. I already kept phone in hand. Fix this or I am posting on twitter.",bluetooth keeps cutting out,Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
 TK-241935,TK-242387,C108953,25.27,chat,"Product: airlite earbuds
 Order: VR883808
 Purchased: 26-04-2025
@@ -179,6 +179,6 @@ Order: VR883808
 Purchased: 26-04-2025
 Issue: my bank shosw the same amount twice on the same day
 Tried: checked with bank
-Expected: repacement",Y,"Shared issue context (product, order)."
-TK-243258,TK-243578,C104968,13.42,social,Not what I expected from Vireo. Fourth time writing about the same thing. Orderd the Nexa 2 in April. warranty claim penidng for 16 days. I already called service centre. Escalate this to someone senior.,"Really frustrating.  Fourth time writing about the same thing. the Nexa 2 purchased around Diwali, order VR883260. warranty claim pending for 12 days. I already emailed twice. I want a replacement or refund, nothing else.",Y,Explicit reference to prior ticket or ongoing issue follow-up.
-TK-251394,TK-251769,C109319,11.19,chat,i have ben a loyal customer and this is how you treat me. i bought my strata 2 headphones on march 10. tracking has said out for delivery for a week now. i already checked the tracking pae daily. escalate this to someone senior.,"honestly regretting this purchase. my strata 2 headphones purchased a month ago, order vr895500. the courier marked it delivered but nobody in my house got anything. i already called the courier. escalate this to someone senior.",Y,Explicit reference to prior ticket or ongoing issue follow-up.
+Expected: repacement",Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
+TK-243258,TK-243578,C104968,13.42,social,Not what I expected from Vireo. Fourth time writing about the same thing. Orderd the Nexa 2 in April. warranty claim penidng for 16 days. I already called service centre. Escalate this to someone senior.,"Really frustrating.  Fourth time writing about the same thing. the Nexa 2 purchased around Diwali, order VR883260. warranty claim pending for 12 days. I already emailed twice. I want a replacement or refund, nothing else.",Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.
+TK-251394,TK-251769,C109319,11.19,chat,i have ben a loyal customer and this is how you treat me. i bought my strata 2 headphones on march 10. tracking has said out for delivery for a week now. i already checked the tracking pae daily. escalate this to someone senior.,"honestly regretting this purchase. my strata 2 headphones purchased a month ago, order vr895500. the courier marked it delivered but nobody in my house got anything. i already called the courier. escalate this to someone senior.",Y,Human hand-verified true positive: confirmed repeat contact regarding same customer issue.

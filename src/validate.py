@@ -97,29 +97,49 @@ def run_validation(sample_size: int = 40, random_seed: int = 42):
     else:
         strat2_repeats = repeats_df.copy()
 
-    # Extract 40 random samples for validation
-    sample_df = strat2_repeats.sample(n=min(sample_size, len(strat2_repeats)), random_state=random_seed).copy()
-
-    # Evaluate true_positive and reasoning
-    eval_results = sample_df.apply(evaluate_repeat_pair_precision, axis=1)
-    sample_df["true_positive"] = [r[0] for r in eval_results]
-    sample_df["validation_reasoning"] = [r[1] for r in eval_results]
-
-    # Export sample CSV to validation/repeat_contact_sample.csv
+    # Check if repeat_contact_sample.csv already exists with human labels
     sample_csv_path = VALIDATION_DIR / "repeat_contact_sample.csv"
-    output_cols = [
-        "original_ticket_id",
-        "repeat_ticket_id",
-        "customer_id",
-        "days_between",
-        "channel",
-        "orig_customer_message",
-        "repeat_customer_message",
-        "true_positive",
-        "validation_reasoning",
-    ]
-    sample_df[output_cols].to_csv(sample_csv_path, index=False)
-    print(f"Saved 40 repeat contact samples to: {sample_csv_path}")
+    if sample_csv_path.exists():
+        existing_sample = pd.read_csv(sample_csv_path)
+        if "true_positive" in existing_sample.columns and existing_sample["true_positive"].dropna().str.upper().isin(["Y", "N"]).any():
+            print(f"Loading existing human-labeled sample from: {sample_csv_path}")
+            sample_df = existing_sample.copy()
+        else:
+            sample_df = strat2_repeats.sample(n=min(sample_size, len(strat2_repeats)), random_state=random_seed).copy()
+            eval_results = sample_df.apply(evaluate_repeat_pair_precision, axis=1)
+            sample_df["true_positive"] = [r[0] for r in eval_results]
+            sample_df["validation_reasoning"] = [r[1] for r in eval_results]
+            output_cols = [
+                "original_ticket_id",
+                "repeat_ticket_id",
+                "customer_id",
+                "days_between",
+                "channel",
+                "orig_customer_message",
+                "repeat_customer_message",
+                "true_positive",
+                "validation_reasoning",
+            ]
+            sample_df[output_cols].to_csv(sample_csv_path, index=False)
+            print(f"Saved 40 repeat contact samples to: {sample_csv_path}")
+    else:
+        sample_df = strat2_repeats.sample(n=min(sample_size, len(strat2_repeats)), random_state=random_seed).copy()
+        eval_results = sample_df.apply(evaluate_repeat_pair_precision, axis=1)
+        sample_df["true_positive"] = [r[0] for r in eval_results]
+        sample_df["validation_reasoning"] = [r[1] for r in eval_results]
+        output_cols = [
+            "original_ticket_id",
+            "repeat_ticket_id",
+            "customer_id",
+            "days_between",
+            "channel",
+            "orig_customer_message",
+            "repeat_customer_message",
+            "true_positive",
+            "validation_reasoning",
+        ]
+        sample_df[output_cols].to_csv(sample_csv_path, index=False)
+        print(f"Saved 40 repeat contact samples to: {sample_csv_path}")
 
     # Calculate Repeat Contact Precision
     tp_count = (sample_df["true_positive"].str.upper() == "Y").sum()
