@@ -59,52 +59,72 @@ def run_business_goal_calculator(target_rate_pct: float = 10.00):
     ] if "original_resolved_at" in strat2_repeats.columns else strat2_repeats
 
     total_ytd_resolved = len(ytd_resolved_df)  # 3,926
-    total_ytd_repeats = 541                     # Strategy 2 repeats in Jan-May 2026
-    total_ytd_cost = 141100.00                  # Actual YTD cost
+    total_ytd_repeats_raw = 541                 # Raw Strategy 2 repeats in Jan-May 2026
+    total_ytd_cost_raw = 141100.00              # Actual YTD cost of raw repeats
 
-    current_repeat_rate = (total_ytd_repeats / total_ytd_resolved * 100) if total_ytd_resolved > 0 else 13.78
-    avg_cost_per_repeat = total_ytd_cost / total_ytd_repeats if total_ytd_repeats > 0 else 260.81
+    # Precision Adjustment Factor (Human-verified 85.00% precision from Stage 9 sample audit)
+    precision_rate = 0.85
+    total_ytd_repeats_adj = total_ytd_repeats_raw * precision_rate  # ~459.85 (~460)
+    total_ytd_cost_adj = total_ytd_cost_raw * precision_rate        # ₹119,935.00
+
+    raw_repeat_rate = (total_ytd_repeats_raw / total_ytd_resolved * 100) if total_ytd_resolved > 0 else 13.78
+    adj_repeat_rate = (total_ytd_repeats_adj / total_ytd_resolved * 100) if total_ytd_resolved > 0 else 11.71
+    avg_cost_per_repeat = total_ytd_cost_raw / total_ytd_repeats_raw if total_ytd_repeats_raw > 0 else 260.81
 
     # Quarterly Baseline Figures (Normalized from 5-month YTD to 3-month quarterly basis)
-    quarterly_resolved = (total_ytd_resolved / 5.0) * 3.0   # ~2,355.6 tickets/qtr
-    quarterly_repeats = (total_ytd_repeats / 5.0) * 3.0     # ~324.6 repeats/qtr
-    quarterly_current_cost = (total_ytd_cost / 5.0) * 3.0   # ₹84,660.00 / qtr
+    quarterly_resolved = (total_ytd_resolved / 5.0) * 3.0       # ~2,355.6 tickets/qtr
+    quarterly_repeats_raw = (total_ytd_repeats_raw / 5.0) * 3.0 # ~324.6 repeats/qtr
+    quarterly_repeats_adj = (total_ytd_repeats_adj / 5.0) * 3.0 # ~275.91 repeats/qtr
+
+    quarterly_cost_raw = (total_ytd_cost_raw / 5.0) * 3.0       # ₹84,660.00 / qtr
+    quarterly_cost_adj = (total_ytd_cost_adj / 5.0) * 3.0       # ₹71,961.00 / qtr
 
     # 4. Compute Target Rate Savings (at 10.00% target rate)
-    target_quarterly_repeats = quarterly_resolved * (target_rate_pct / 100.0)
+    target_quarterly_repeats = quarterly_resolved * (target_rate_pct / 100.0) # 235.56 repeats/qtr
     target_quarterly_cost = target_quarterly_repeats * avg_cost_per_repeat
-    quarterly_savings = quarterly_current_cost - target_quarterly_cost
-    annual_savings = quarterly_savings * 4.0
-    rate_reduction_pp = current_repeat_rate - target_rate_pct
-    relative_reduction_pct = (rate_reduction_pp / current_repeat_rate) * 100
 
-    # 5. Stage 5 Language Sweep Observation (Separate, Non-Overlapping Population)
-    sweep_csv = VALIDATION_DIR / "repeat_language_sweep_results.csv"
-    stage5_matches = len(pd.read_csv(sweep_csv)) if sweep_csv.exists() else 328
-    stage5_additional_rate = 7.62
+    # Raw Pre-Validation Savings
+    qtr_savings_raw = quarterly_cost_raw - target_quarterly_cost # ₹23,220.81 / qtr
+    annual_savings_raw = qtr_savings_raw * 4.0                    # ₹92,883.24 / yr
+    raw_pp_reduction = raw_repeat_rate - target_rate_pct
 
-    # Print Detailed Summary
+    # Precision-Adjusted Final Savings
+    qtr_savings_adj = quarterly_cost_adj - target_quarterly_cost # ₹10,521.81 / qtr (~₹10,522)
+    annual_savings_adj = qtr_savings_adj * 4.0                    # ₹42,087.24 / yr (~₹42,087)
+    adj_pp_reduction = adj_repeat_rate - target_rate_pct
+    adj_relative_reduction = (adj_pp_reduction / adj_repeat_rate) * 100
+
+    # Print Side-by-Side Detailed Summary
     print(f"Censoring-Safe Baseline Period : Jan 1, 2026 – May 31, 2026 (5 months, n={total_ytd_resolved:,})")
-    print(f"Sole Headline Repeat Rate      : {current_repeat_rate:.2f}% ({total_ytd_repeats:,} repeat tickets)")
-    print(f"Average Cost Per Repeat        : ₹{avg_cost_per_repeat:.2f}")
-    print(f"Current Quarterly Baseline Cost: ₹{quarterly_current_cost:,.2f} / quarter (~₹{quarterly_current_cost*4:,.2f}/year)")
-    print("-" * 60)
-    print(f"Target Repeat Contact Rate     : {target_rate_pct:.2f}% (Reduction of {rate_reduction_pp:.2f} percentage points / ~{relative_reduction_pct:.1f}% relative)")
-    print(f"Target Quarterly Cost          : ₹{target_quarterly_cost:,.2f} / quarter")
-    print(f"Projected Quarterly Savings    : ₹{quarterly_savings:,.2f} / quarter")
-    print(f"Projected Annual Savings       : ₹{annual_savings:,.2f} / year")
+    print(f"Average Channel Cost per Repeat: ₹{avg_cost_per_repeat:.2f}")
+    print("-" * 80)
+    print("METRIC                              RAW PRE-VALIDATION         PRECISION-ADJUSTED (FINAL)")
+    print("-" * 80)
+    print(f"YTD Repeat Contact Count           : {total_ytd_repeats_raw:<26} {total_ytd_repeats_adj:.2f} (~460)")
+    print(f"YTD Repeat Contact Rate            : {raw_repeat_rate:.2f}%{'':<22} {adj_repeat_rate:.2f}%")
+    print(f"5-Month Baseline Loss              : ₹{total_ytd_cost_raw:,.2f}{'':<14} ₹{total_ytd_cost_adj:,.2f}")
+    print(f"Quarterly Baseline Loss            : ₹{quarterly_cost_raw:,.2f} / qtr{'':<10} ₹{quarterly_cost_adj:,.2f} / qtr")
+    print(f"Annualized Baseline Loss           : ₹{quarterly_cost_raw*4:,.2f} / yr{'':<9} ₹{quarterly_cost_adj*4:,.2f} / yr")
+    print("-" * 80)
+    print(f"Target Repeat Rate                 : {target_rate_pct:.2f}%{'':<23} {target_rate_pct:.2f}%")
+    print(f"Rate Reduction (pp / relative)     : {raw_pp_reduction:.2f} pp{'':<18} {adj_pp_reduction:.2f} pp (~{adj_relative_reduction:.1f}% rel)")
+    print(f"Target Quarterly Cost              : ₹{target_quarterly_cost:,.2f} / qtr{'':<10} ₹{target_quarterly_cost:,.2f} / qtr")
+    print(f"Projected Quarterly Savings        : ₹{qtr_savings_raw:,.2f} / qtr{'':<10} ₹{qtr_savings_adj:,.2f} / qtr")
+    print(f"Projected Annual Savings           : ₹{annual_savings_raw:,.2f} / yr{'':<9} ₹{annual_savings_adj:,.2f} / yr")
     print("=" * 80)
 
-    # 6. Format Corrected Ready-to-Paste Executive Paragraph
-    memo_text = f"""
-================================================================================
+    # 5. Format Corrected Ready-to-Paste Executive Paragraph
+    memo_text = f"""================================================================================
 CORRECTED EXECUTIVE PARAGRAPH (FOR MEMO & SUBMISSION FORM)
 ================================================================================
 
 BUSINESS GOAL & FINANCIAL ROI:
-Over the 2026 YTD censoring-safe baseline period (Jan–May 2026, n=3,926 resolved tickets), Vireo Audio experienced a 13.78% structural repeat-contact rate (541 repeat contacts), costing ₹1,41,100 across 5 months—a baseline operational loss of ₹84,660 per quarter (~₹3.39 Lakhs annually).
+Over the 2026 YTD censoring-safe baseline period (Jan–May 2026, n=3,926 resolved tickets), Vireo Audio experienced a precision-adjusted repeat-contact rate of 11.71% (460 confirmed repeat contacts, down from a raw structural count of 541 / 13.78% prior to applying our human-validated 85% precision factor). This represents a baseline operational loss of ₹71,961 per quarter (~₹2.88 Lakhs annually; ₹1,19,935 across 5 months).
 
-By setting an operational target to reduce the repeat-contact rate from 13.78% down to 10.00% (a 3.78 percentage-point reduction, representing a realistic ~27.4% relative reduction from baseline), Vireo Audio will eliminate ~89 repeat contacts per quarter. At the channel-weighted average cost of ₹260.81 per contact, this yields direct, verifiable cost savings of ₹23,220 per quarter (₹92,880 annually).
+By setting an operational target to reduce the repeat-contact rate from 11.71% down to 10.00% (a 1.71 percentage-point reduction, representing a realistic ~14.6% relative reduction from baseline), Vireo Audio will eliminate ~40 verified repeat contacts per quarter. At the channel-weighted average cost of ₹260.81 per contact, this yields direct, verifiable cost savings of ₹10,522 per quarter (₹42,087 annually).
+
+Transparency Note (Pre-Validation Raw Baseline):
+Before human validation adjustment (85% precision across n=40 sampled pairs), raw structural category+SKU matching flagged 541 repeat contacts (13.78% rate, ₹84,660/quarter baseline loss). Reducing raw structural matches to 10.00% would project ₹23,220/quarter savings.
 
 Separate Observation (Stage 5 Language Sweep):
 Population Confirmation: The Stage 5 repeat-language figure was computed strictly over resolved/closed tickets that were NOT already flagged as structural repeats by Stage 4 (a mutually exclusive, non-overlapping population). An additional 7.62% of tickets contain language suggesting a prior unresolved contact ("already called", "spoke to your colleague", "still waiting") that our structural 30-day match did not catch—this is a directional signal from unverified text matching, not a confirmed repeat-contact count, and is not included in the headline rate or the savings calculation.
@@ -122,3 +142,4 @@ Population Confirmation: The Stage 5 repeat-language figure was computed strictl
 
 if __name__ == "__main__":
     run_business_goal_calculator()
+

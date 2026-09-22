@@ -14,8 +14,8 @@ The existing category field achieved a **90.91% agreement rate**.
 - **Ticket `TK-250451`** (Assigned: `Other`): Message clearly concerns 'Delivery & Shipping' issues rather than 'Other'.
 
 ## 2. Repeat-Contact Precision Check (Stage 4)
-A random sample of 40 flagged repeat-contact ticket pairs (Strategy 2: Category + SKU match) was hand-verified for semantic issue alignment.
-The structural 30-day join achieved a **85.00% precision rate** (34 true positives out of 40 pairs).
+40 flagged repeat-contact pairs were manually reviewed by the project author; 34 were confirmed as genuine same-issue repeat contacts (85% precision).
+The structural 30-day join achieved an **85.00% precision rate** (34 true positives out of 40 pairs).
 
 ### Concrete Examples of Repeat-Contact False Positives:
 - **Pair (`TK-246226` -> `TK-247259`)** (25.4 days apart):
