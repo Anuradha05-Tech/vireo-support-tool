@@ -81,6 +81,9 @@ python3 -m src.tool_cost_estimate
 
 # Stage 9: Pipeline Validation & Precision Reporting
 python3 -m src.validate
+
+# Stage 10: Combined Executive Summary Dashboard (HTML Report)
+python3 -m src.summary_dashboard
 ```
 
 ---
@@ -96,9 +99,10 @@ python3 -m src.validate
 | `src.repeat_language_sweep` | [`validation/repeat_language_sweep_results.csv`](file:///home/user/Documents/vireo-support-tool/validation/repeat_language_sweep_results.csv) | Unflagged tickets containing "already told you" repeat language (+7.62%). |
 | `src.weekly_digest` | [`reports/digest_latest.html`](file:///home/user/Documents/vireo-support-tool/reports/digest_latest.html) | HTML report of top mover category, category ranking, and repeat rate. |
 | `src.leaderboard` | [`reports/leaderboard_latest.html`](file:///home/user/Documents/vireo-support-tool/reports/leaderboard_latest.html) | HTML report ranking Tier 1 agents by closed volume and Tier 2 resolution times. |
-| `src.business_goal` | [`validation/business_goal_summary.md`](file:///home/user/Documents/vireo-support-tool/validation/business_goal_summary.md) | Financial ROI calculation (₹23,220/qtr savings at 10.00% target rate). |
+| `src.business_goal` | [`validation/business_goal_summary.md`](file:///home/user/Documents/vireo-support-tool/validation/business_goal_summary.md) | Financial ROI calculation (₹10,522/qtr savings at 10.00% target rate). |
 | `src.tool_cost_estimate` | [`validation/tool_cost_estimate.md`](file:///home/user/Documents/vireo-support-tool/validation/tool_cost_estimate.md) | Exact accounting of AI tool build costs (₹0.00 Free Tier / ₹0.17 Commercial). |
-| `src.validate` | [`validation/validation_report.md`](file:///home/user/Documents/vireo-support-tool/validation/validation_report.md)<br>[`validation/repeat_contact_sample.csv`](file:///home/user/Documents/vireo-support-tool/validation/repeat_contact_sample.csv) | Validation report and 40 hand-verified repeat contact sample pairs. |
+| `src.validate` | [`validation/validation_report.md`](file:///home/user/Documents/vireo-support-tool/validation/validation_report.md)<br>[`validation/repeat_contact_sample.csv`](file:///home/user/Documents/vireo-support-tool/validation/repeat_contact_sample.csv) | Validation report and 40 hand-verified repeat contact sample pairs (85% precision). |
+| `src.summary_dashboard` | [`reports/summary_dashboard.html`](file:///home/user/Documents/vireo-support-tool/reports/summary_dashboard.html) | Combined single-file executive summary dashboard HTML report. |
 
 ---
 
